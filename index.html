@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Tic Tac Toe</h1>
+        <div class="game-options">
+            <button id="vs-player">Player vs Player</button>
+            <button id="vs-ai">Player vs AI</button>
+        </div>
+        <div class="difficulty-selector" style="display: none;">
+            <h2>Select AI Difficulty:</h2>
+            <button class="difficulty" data-difficulty="easy">Easy</button>
+            <button class="difficulty" data-difficulty="medium">Medium</button>
+            <button class="difficulty" data-difficulty="hard">Hard</button>
+            <button class="difficulty" data-difficulty="impossible">Impossible</button>
+        </div>
+        <div id="game-board" class="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="game-info">
+            <div id="status" class="status"></div>
+            <button id="restart">Restart Game</button>
+        </div>
+    </div>
+    <audio id="place-sound" src="place.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="draw-sound" src="draw.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
