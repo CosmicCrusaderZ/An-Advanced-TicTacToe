@@ -19,6 +19,8 @@ const vsPlayerButton = document.getElementById('vs-player');
 const vsAIButton = document.getElementById('vs-ai');
 const difficultySelector = document.querySelector('.difficulty-selector');
 const difficultyButtons = document.querySelectorAll('.difficulty');
+const darkModeButton = document.getElementById('darkMode');
+const lightModeButton = document.getElementById('lightMode');
 
 const placeSound = document.getElementById('place-sound');
 const winSound = document.getElementById('win-sound');
@@ -44,6 +46,8 @@ difficultyButtons.forEach(button => {
 });
 
 restartButton.addEventListener('click', startGame);
+darkModeButton.addEventListener('click', () => document.body.classList.add('dark-mode'));
+lightModeButton.addEventListener('click', () => document.body.classList.remove('dark-mode'));
 
 function startVsPlayer() {
     isVsAI = false;
